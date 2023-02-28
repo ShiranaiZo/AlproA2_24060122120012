@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1676954992 source:f:\programming\c\kuliah\jarakglbb\main.c
+	<stdio.h>
+	<stdlib.h>
+
+1677500806 source:f:\programming\c\kuliah\pertemuan1\jarakglbb\main.c
+	<stdio.h>
+	<stdlib.h>
+

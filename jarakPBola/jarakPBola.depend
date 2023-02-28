@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1677501469 source:f:\programming\c\kuliah\pertemuan1\jarakpbola\main.c
+	<stdio.h>
+	<stdlib.h>
+
