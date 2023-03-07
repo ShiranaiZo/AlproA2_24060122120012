@@ -12,7 +12,7 @@ Tanggal       : 07-03-2022
 int main()
 {
     // Kamus Lokal
-    int i = 1; //counter
+    int i; //counter
     int N; // Bilangan
     int jumlah = 0; // jumlah increament untuk menentukan bilangan prima
 
@@ -21,16 +21,13 @@ int main()
 
     if (scanf("%d", &N) && N > 0)
     {
-        do {
+        for (i = 1; i <= N; i++)
+        {
             if (N % i == 0)
             {
                 jumlah++;
             }
-
-            i++;
         }
-
-        while (i <= N);
         
         if (jumlah == 2)
         {

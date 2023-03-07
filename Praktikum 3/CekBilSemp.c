@@ -12,7 +12,7 @@ Tanggal       : 07-03-2022
 int main()
 {
     // Kamus Lokal
-    int i = 1; //counter
+    int i; //counter
     int N; // bilangan
     int jumlah = 0; // jumlah faktor bilangan
 
@@ -21,15 +21,14 @@ int main()
 
     if (scanf("%d", &N) && N > 0)
     {
-        while (i <= N)
+        for (i = 1; i <= N; i++)
         {
             if (N % i == 0 && N != i)
             {
                 jumlah += i;
             }
-
-            i++;
         }
+        
         
         if (jumlah == N)
         {

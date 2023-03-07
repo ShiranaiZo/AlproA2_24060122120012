@@ -12,7 +12,7 @@ Tanggal       : 07-03-2022
 int main()
 {
     // Kamus Lokal
-    int i = 1; // counter
+    int i; // counter
     int N; // Bilangan
 
     // Algoritma
@@ -21,8 +21,9 @@ int main()
     if (scanf("%d", &N) && N > 0)
     {
         printf("Faktor bilangannya adalah ");
-        
-        do {
+
+        for (i = 1; i <= N; i++)
+        {
             if (N % i == 0)
             {
                 printf("%d", i);
@@ -32,11 +33,8 @@ int main()
                     printf(", ");
                 }
             }
-
-            i++;
         }
-
-        while (i <= N);
+        
     }
     else{
         printf("Bilangan harus integer dan lebih dari 0");

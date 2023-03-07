@@ -18,7 +18,7 @@ int main()
     int jumlah; // jumlah increament untuk menentukan bilangan prima
 
     // Algoritma
-    printf("Sebanyak    : ");
+    printf("Masukan Bilangan    : ");
     
     if (scanf("%d", &N) && N > 0)
     {
@@ -27,18 +27,15 @@ int main()
         for (i = 1; i <= N; i++)
         {
             jumlah = 0;
-            j = 1;
 
-            do {
+            for (j = 1; j <= i; j++)
+            {
                 if (i % j == 0)
                 {
                     jumlah++;
                 }
-
-                j++;
             }
-
-            while (j <= i);
+            
             
             if (jumlah == 2)
             {

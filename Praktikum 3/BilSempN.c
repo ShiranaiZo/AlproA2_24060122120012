@@ -18,23 +18,20 @@ int main()
     int jumlah; // jumlah faktor bilangan
 
     // Algoritma
-    printf("Sebanyak    : ");
+    printf("Masukan Bilangan    : ");
     scanf("%d", &N);
     
     printf("Bilangan Sempurnanya adalah ");
     for (i = 1; i <= N; i++)
     {
         jumlah = 0;
-        j = 1;
 
-        while (j <= i)
+        for (j = 1; j <= i; j++)
         {
             if (i % j == 0 && i != j)
             {
                 jumlah += j;
             }
-
-            j++;
         }
         
         if (jumlah == i)
