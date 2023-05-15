@@ -31,7 +31,7 @@ void SEQSearchX1(int T[], int *N, int *X, int *IX){
 }
 
 int main(void){
-    // Kamu Lokal
+    // Kamus Lokal
     int N, X, IX, i;
     int *T;
     bool checkValue = true;
